@@ -1,0 +1,12 @@
+.friendList{
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    background-color: aqua;
+    margin-bottom: 20px;
+}
+.friendList li{        
+width: 58px;
+}
