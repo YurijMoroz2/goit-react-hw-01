@@ -1,28 +1,23 @@
+import { Transactioon } from '../Transactioon/transactioon';
+import css from './TransactionHistory.module.css';
 
-export const TransactionHistory = ({items})=>{
-  console.log(items);
-  return(
-<table className="transaction-history">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>Invoice</td>
-      <td>125</td>
-      <td>USD</td>
-    </tr>
-    <tr>
-      <td>Withdrawal</td>
-      <td>85</td>
-      <td>USD</td>
-    </tr>
-  </tbody>
-</table>
-  )
-}
+export const TransactionHistory = ({ items }) => {
+  return (
+    <table className={css.transactionHistory}>
+      <thead>
+        <tr>
+          <th scope="row">Type</th>
+          <th>Amount</th>
+          <th>Currency</th>
+        </tr>
+      </thead>
+      <tbody>
+        {items.map(item => (
+          <tr key={item.id}>
+            <Transactioon info={item} />
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+};

@@ -4,7 +4,7 @@ import { FriendList } from '../FriendList/FriendList';
 import friends from '../../friends.json';
 import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
 import transactoons  from '../../transactions.json'
-
+import clsx from "clsx";
 export function App() {
   return (
     <>
