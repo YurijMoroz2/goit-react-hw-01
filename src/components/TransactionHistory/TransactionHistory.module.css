@@ -12,6 +12,19 @@
   font-size: 15px;
   text-align: center;
 }
-.transactionHistory tr:nth-child(odd) {
+.transactionHistory tr:nth-child(even) {
   background-color: gray;
+}
+.transactioon {
+  border: 1px solid black;
+  padding-left: 35px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  text-align: left;
+}
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
 }
